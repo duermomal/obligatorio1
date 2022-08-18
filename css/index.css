@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+
+
 html,
 body {
   height: 100%;
@@ -13,6 +17,8 @@ body {
 
 #imgLogin {
   max-width: 100%;
+  margin-top: 10%;
+
 }
 
 .form-signin {
@@ -43,4 +49,12 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+
+#warning {
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  text-align: center;  
+  color: #ff2002;
 }

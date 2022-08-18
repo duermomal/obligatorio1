@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 
-<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.84.0">
     <title>e-Mercado - Login</title>
 
-   
-
-    
-
-    <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--google api-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 
 
-<link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="img/creep.ico">
-<meta name="theme-color" content="#7952b3">
+        <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="img/creep.ico">
+    <meta name="theme-color" content="#7952b3">
 
 
     <style>
@@ -44,16 +47,17 @@
   <body id="cuerpo" class="text-center" cz-shortcut-listen="true">
     
 <main class="form-signin">
-  <form>
-    <img id="imgLogin" class="mb-4" src="img/login.png" alt="E-Mercado Icon" >
+  <form id="formulario">
+    <img id="imgLogin" src="img/login.png" alt="E-Mercado Icon" >
+    <p id="warning"><br></p>
     <h1 class="h3 mb-3 fw-normal">Inicio de sesión</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="email" class="form-control" id="email" placeholder="email">
       <label for="floatingInput">Email</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" class="form-control" id="contra" placeholder="contrseña" >
       <label for="floatingPassword">Contraseña</label>
     </div>
 
@@ -65,7 +69,6 @@
     <button id="ingreso" class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
   </form>
 </main>
-
 
     
 <script src="js/index.js"></script>  
