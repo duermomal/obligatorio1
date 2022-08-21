@@ -1,5 +1,6 @@
 const form = document.getElementById("formulario");
 
+
 form.addEventListener('submit', e =>{
     e.preventDefault();
     const email = document.getElementById("email");
@@ -18,5 +19,7 @@ form.addEventListener('submit', e =>{
     else {
         window.location = "principal.html";
     }
+
+
     
 });
