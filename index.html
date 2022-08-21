@@ -5,6 +5,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.84.0">
+    <meta name="google-signin-client_id" content="468259567675-huflt3gju8u5o8epkl9e08meqlh7m225.apps.googleusercontent.com">
     <title>e-Mercado - Login</title>
 
     <!--google api-->
@@ -61,6 +62,8 @@
       <label for="floatingPassword">Contraseña</label>
     </div>
 
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
     <div class="checkbox mb-3">
       <label>
         <input type="checkbox" value="remember-me"> Recordarme
@@ -72,6 +75,7 @@
 
     
 <script src="js/index.js"></script>  
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </body>
 
