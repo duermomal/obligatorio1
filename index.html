@@ -10,8 +10,12 @@
 
     <!--google api-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+
+     <script src="https://accounts.google.com/gsi/client" async defer></script>
+
 
 
         <!-- Bootstrap core CSS -->
@@ -62,34 +66,29 @@
       <label for="floatingPassword">Contraseña</label>
     </div>
 
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-
     <div class="checkbox mb-3">
       <label>
         <input type="checkbox" value="remember-me"> Recordarme
       </label>
     </div>
     <button id="ingreso" class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+
+   
+    <div id="g_id_onload"
+         data-client_id="468259567675-huflt3gju8u5o8epkl9e08meqlh7m225.apps.googleusercontent.com"
+         data-ux_mode="redirect"
+         data-callback = "redireccion"
+         data-login_uri="https://duermomal.github.io/obligatorio1/index.html">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
+
   </form>
 </main>
 
-    
 
 <script src="js/index.js"></script>  
-<script src="https://apis.google.com/js/platform.js" async defer></script> 
 
-<script>
-  function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-  var id_token = googleUser.getAuthResponse().id_token;
-  console.log(id_token);
-}
-</script>
-<br>
+
 </body>
 
 

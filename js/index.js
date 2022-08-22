@@ -1,5 +1,11 @@
 const form = document.getElementById("formulario");
 
+function redireccion () {
+
+    
+    window.location.href = "principal.html";
+}
+
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
