@@ -1,11 +1,6 @@
 const form = document.getElementById("formulario");
 
 
-window.response = function () {    
-    
-    window.location.href = "principal.html";
-}
-
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
@@ -29,3 +24,9 @@ form.addEventListener('submit', e =>{
 
     
 });
+
+window.response = function () {    
+    
+    window.location = "principal.html";
+}
+
