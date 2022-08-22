@@ -2,6 +2,7 @@ const form = document.getElementById("formulario");
 
 
 window.response = function () {    
+    
     window.location.href = "principal.html";
 }
 
