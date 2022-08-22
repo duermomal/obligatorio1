@@ -1,8 +1,7 @@
 const form = document.getElementById("formulario");
 
-function redireccion () {
 
-    
+window.redireccion = function () {    
     window.location.href = "principal.html";
 }
 
